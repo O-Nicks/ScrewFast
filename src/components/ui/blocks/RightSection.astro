@@ -54,9 +54,9 @@ interface Props {
     single ? (
       <div class="mt-8">
         <!-- Single image -->
-        <Image
+        <img
           class="w-full rounded-lg"
-          src={imgOne}
+          src={imgOne.src}
           alt={imgOneAlt}
           format={"avif"}
         />
@@ -64,17 +64,17 @@ interface Props {
     ) : (
       <div class="mt-8 grid grid-cols-2 gap-4">
         <!-- First image in a two-image layout -->
-        <Image
+        <img
           class="w-full rounded-xl"
-          src={imgOne}
+          src={imgOne.src}
           alt={imgOneAlt}
           draggable={"false"}
           format={"avif"}
         />
         <!-- Second image in a two-image layout -->
-        <Image
+        <img
           class="mt-4 w-full rounded-xl lg:mt-10"
-          src={imgTwo}
+          src={imgTwo.src}
           alt={imgTwoAlt}
           draggable={"false"}
           format={"avif"}

@@ -25,8 +25,8 @@ const imageClass =
   class="group relative flex h-48 items-end overflow-hidden rounded-xl shadow-lg outline-hidden ring-zinc-500 focus-visible:ring-3 dark:ring-zinc-200 dark:focus:outline-hidden md:h-80"
 >
   <!-- The product's main image -->
-  <Image
-    src={product.data.main.imgCard}
+  <img
+    src={product.data.main.imgCard.src}
     alt={product.data.main.imgAlt}
     draggable={"false"}
     class={imageClass}

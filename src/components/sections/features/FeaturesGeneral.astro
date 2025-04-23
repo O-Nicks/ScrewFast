@@ -28,8 +28,8 @@ const { title, subTitle, src, alt, features } = Astro.props;
   <div class="relative mb-6 overflow-hidden md:mb-8">
     {
       src && alt && (
-        <Image
-          src={src}
+        <img
+          src={src.src}
           alt={alt}
           class="h-full w-full object-cover object-center"
           draggable={"false"}

@@ -26,9 +26,9 @@ interface Props {
 >
   <!-- This is the container for the insight's cover image. -->
   <div class="relative overflow-hidden rounded-xl pt-[50%] sm:pt-[70%]">
-    <Image
+    <img
       class="absolute start-0 top-0 size-full rounded-xl object-cover transition duration-500 ease-in-out group-hover:scale-105"
-      src={insightEntry.data.cardImage}
+      src={insightEntry.data.cardImage.src}
       alt={insightEntry.data.cardImageAlt}
       draggable={"false"}
       format={"avif"}

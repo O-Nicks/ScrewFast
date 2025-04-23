@@ -1,6 +1,5 @@
 ---
 // Import necessary components
-import { Image } from "astro:assets";
 
 import type { CollectionEntry } from "astro:content";
 
@@ -12,9 +11,9 @@ interface Props {
 ---
 
 <div class="shrink-0">
-  <Image
+  <img
     class="size-[46px] rounded-full border-2 border-neutral-50"
-    src={blogEntry.data.authorImage}
+    src={blogEntry.data.authorImage.src}
     alt={blogEntry.data.authorImageAlt}
     draggable={"false"}
     format={"avif"}

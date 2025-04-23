@@ -62,12 +62,11 @@ const pageTitle: string = `${product.data.title} | ${SITE.title}`;
         </p>
       </div>
       <div>
-        <Image
+        <img
           id="fadeInMoveRight"
-          src={product.data.main.imgMain}
+          src={product.data.main.imgMain.src}
           class="w-[600px]"
           alt={product.data.main.imgAlt}
-          format={"avif"}
           loading={"eager"}
         />
       </div>
@@ -224,8 +223,8 @@ const pageTitle: string = `${product.data.title} | ${SITE.title}`;
       >
         {
           product.data.blueprints.first && (
-            <Image
-              src={product.data.blueprints.first}
+            <img
+              src={product.data.blueprints.first.src}
               class="h-full w-full object-cover object-center"
               alt="Blueprint Illustration"
               format={"avif"}
@@ -237,11 +236,10 @@ const pageTitle: string = `${product.data.title} | ${SITE.title}`;
       <div class="relative right-12 overflow-hidden rounded-xl shadow-xl">
         {
           product.data.blueprints.second && (
-            <Image
-              src={product.data.blueprints.second}
+            <img
+              src={product.data.blueprints.second.src}
               class="h-full w-full object-cover object-center"
               alt="Blueprint Illustration"
-              format={"avif"}
             />
           )
         }
