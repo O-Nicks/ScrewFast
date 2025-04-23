@@ -1,7 +1,6 @@
 ---
 // Import necessary components and utilities
 import AvatarBlog from "@components/ui/avatars/AvatarBlog.astro";
-import { Image } from "astro:assets";
 import { formatDate } from "@utils/utils";
 import type { CollectionEntry } from "astro:content";
 
@@ -34,7 +33,6 @@ interface Props {
       alt={blogEntry.data.cardImageAlt}
       draggable={"false"}
       loading={"eager"}
-      format={"avif"}
     />
   </div>
   <!-- The container for the blog author's avatar and associated metadata (author name and publication date) -->

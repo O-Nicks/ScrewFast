@@ -1,6 +1,5 @@
 ---
 // Import the required modules
-import { Image } from "astro:assets";
 import PrimaryCTA from "@components/ui/buttons/PrimaryCTA.astro";
 // Extract properties from Astro.props
 const {
@@ -58,7 +57,6 @@ interface Props {
           class="w-full rounded-lg"
           src={imgOne.src}
           alt={imgOneAlt}
-          format={"avif"}
         />
       </div>
     ) : (
@@ -69,7 +67,6 @@ interface Props {
           src={imgOne.src}
           alt={imgOneAlt}
           draggable={"false"}
-          format={"avif"}
         />
         <!-- Second image in a two-image layout -->
         <img
@@ -77,7 +74,6 @@ interface Props {
           src={imgTwo.src}
           alt={imgTwoAlt}
           draggable={"false"}
-          format={"avif"}
         />
       </div>
     )

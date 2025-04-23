@@ -3,7 +3,6 @@
 import MainLayout from "@/layouts/MainLayout.astro";
 import ProductTabBtn from "@components/ui/buttons/ProductTabBtn.astro";
 import PrimaryCTA from "@components/ui/buttons/PrimaryCTA.astro";
-import { Image } from "astro:assets";
 import { getCollection } from "astro:content";
 import { SITE } from "@data/constants";
 
@@ -227,7 +226,6 @@ const pageTitle: string = `${product.data.title} | ${SITE.title}`;
               src={product.data.blueprints.first.src}
               class="h-full w-full object-cover object-center"
               alt="Blueprint Illustration"
-              format={"avif"}
             />
           )
         }

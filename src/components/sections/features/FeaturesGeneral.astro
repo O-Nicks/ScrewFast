@@ -1,6 +1,5 @@
 ---
 // Import the necessary dependencies
-import { Image } from "astro:assets";
 import IconBlock from "@components/ui/blocks/IconBlock.astro";
 import Icon from "@components/ui/icons/Icon.astro";
 
@@ -33,7 +32,6 @@ const { title, subTitle, src, alt, features } = Astro.props;
           alt={alt}
           class="h-full w-full object-cover object-center"
           draggable={"false"}
-          format={"avif"}
           loading={"eager"}
         />
       )

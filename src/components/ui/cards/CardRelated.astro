@@ -1,6 +1,5 @@
 ---
 // Import necessary modules and utilities
-import { Image } from "astro:assets";
 import { formatDate } from "@utils/utils";
 import type { CollectionEntry } from "astro:content";
 
@@ -25,7 +24,6 @@ interface Props {
       src={blogEntry.data.cardImage}
       alt={blogEntry.data.cardImageAlt}
       draggable={"false"}
-      format={"avif"}
     />
     <!-- The title of the blog post -->
     <h3

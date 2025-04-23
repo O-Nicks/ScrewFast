@@ -2,7 +2,6 @@
 // Import section components
 import { SITE } from "@data/constants";
 import MainLayout from "@/layouts/MainLayout.astro";
-import { Image } from "astro:assets";
 import { getCollection, render } from "astro:content";
 
 // Use `getStaticPaths` to generate static routes for generated pages on build
@@ -36,7 +35,6 @@ const pageTitle: string = `${post.data.title} | ${SITE.title}`;
               src={post.data.cardImage.src}
               alt={post.data.cardImageAlt}
               draggable={"false"}
-              format={"avif"}
             />
           </div>
           <div

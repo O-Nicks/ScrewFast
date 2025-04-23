@@ -1,6 +1,5 @@
 ---
 // Import all required components and utilities
-import { Image } from "astro:assets";
 import type { CollectionEntry } from "astro:content";
 import AvatarBlogLarge from "@components/ui/avatars/AvatarBlogLarge.astro";
 import PrimaryCTA from "@components/ui/buttons/PrimaryCTA.astro";
@@ -24,7 +23,6 @@ interface Props {
         alt={blogEntry.data.cardImageAlt}
         draggable={"false"}
         loading={"eager"}
-        format={"avif"}
       />
     </div>
   </div>
