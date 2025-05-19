@@ -1,7 +1,6 @@
 ---
 import MainLayout from "@/layouts/MainLayout.astro";
 
-// Récupère les données depuis l'API externe
 export async function getStaticPaths() {
   console.log("Fetching data from API...");
   const res = await fetch("https://api.restful-api.dev/objects/4");

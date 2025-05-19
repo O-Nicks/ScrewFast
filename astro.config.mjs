@@ -3,12 +3,16 @@ import tailwindcss from "@tailwindcss/vite";
 import sitemap from "@astrojs/sitemap";
 import compressor from "astro-compressor";
 import starlight from "@astrojs/starlight";
-
+import node from "@astrojs/node"; // ✅ Le bon import
 import mdx from "@astrojs/mdx";
+
+import vue from "@astrojs/vue";
 
 // https://astro.build/config
 export default defineConfig({
-  // https://docs.astro.build/en/guides/images/#authorizing-remote-images
+  // output: "server",
+  // adapter: node({ mode: 'standalone' }), // 👈 Ajout du mode requis
+  // // https://docs.astro.build/en/guides/images/#authorizing-remote-images
   site: "http://localhost:4321/",
   // site: "https://screwfast.uk",
   image: {
@@ -114,7 +118,7 @@ export default defineConfig({
   }), compressor({
     gzip: true,
     brotli: true,
-  }), mdx()],
+  }), mdx(), vue()],
   experimental: {
     clientPrerender: true,
   },
